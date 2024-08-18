@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @author Kornholijo
+ * @desc MySQL DB support for TFSCMS
+ * @copyright 2007
+ */
+
+define(MISSING_DBHANDLER, 0);
+define(DBHANDLER_VERSION, 0x100B);
+define(DBHANDLER_CLASS, "mysql");
+
+class DBHandler
+{
+	var $hostname = "localhost", $username = "tfs", $password = "", $dbase = "";
+	var $link;
+	
+	function DBHandler($host, $user, $pass, $dbase = "tfs")
+	{
+		$this->hostname = $host;
+		$this->username = $user;
+		$this->password = $pass;
+		$this->dbase 	= $dbase;
+	}
+	
+	function connect()				return mysql_connect($this->hostname, $this->username, $this->password, $this->link);
+	function select_db()			return mysql_select_db($this->dbase, $this->link);
+	function query($sql) 			return mysql_query($sql, $this->link);
+	function fetch_array($result)	return mysql_fetch_array($result);
+	function assoc_array($result)	return mysql_fetch_array($result, MYSQL_ASSOC);
+	function num_rows($result)		return mysql_num_rows($result);
+	function escape_string($str)	return mysql_real_escape_string($str, $this->link);
+	function close() 				return mysql_close($this->link);
+}
+
+?>

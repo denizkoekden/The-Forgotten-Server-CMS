@@ -1,0 +1,22 @@
+BODY { font: 11px verdana, arial, sans-serif; color: #3D3D3D; }
+
+TD, TH, .BOD, FONT { font: 11.5px verdana, arial, sans-serif; color: #3D3D3D; }
+
+A:link, A:active, A:visited { font: 11px verdana, arial, sans-serif; color: #000080; text-decoration: none; }
+
+A:hover { font: 11px verdana, arial, sans-serif; color: #333399; text-decoration: underline; }
+
+select, input, textarea { font: 11px verdana, arial, sans-serif; color: #3D3D3D; }
+
+A.small:link, A.small:visited, A.small:active { font: 10px verdana, arial, sans-serif; color: #000080; text-decoration: none; }
+
+A.small:hover { font: 10px verdana, arial, sans-serif; color: #4F0000; text-decoration: underline; }
+
+A.newsarc:link, A.newsarc:visited, A.newsarc:active { font: 11px verdana, arial, sans-serif; color: #4E4E4E; text-decoration: underline; }
+
+A.newsarc:hover { font: 11px verdana, arial, sans-serif; color: #262626; text-decoration: underline; }
+
+.boxtitle                  {BACKGROUND: none; COLOR: #000000; FONT-SIZE: 16px; FONT-WEIGHT: bold; FONT-FAMILY: Verdana, Helvetica; TEXT-DECORATION: none}
+
+h1 { font: 13px verdana, arial, sans-serif; color: #3D3D3D; FONT-WEIGHT: bold;}
+h2 { font: 12px verdana, arial, sans-serif; color: #3D3D3D; FONT-WEIGHT: bold; margin-top: 0; margin-bottom: 0}
